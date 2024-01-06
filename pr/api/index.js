@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser'
 
 const app=express()
 app.use(express.json())
-app.use(cookieParser());  // ad cookie parser hia li kat5lina njibo l cookie mn session
+app.use(cookieParser("hhhhabdo"));  // ad cookie parser hia li kat5lina njibo l cookie mn session
 
 
 // app.get("/test",(req,res)=>{
