@@ -54,7 +54,7 @@ export const login=(req,res)=>{
        const {password,...other}=data[0]
  
        res.cookie("access_token",token,{
-        domaine:'.blog-client-cn05.onrender.com',
+        // domaine:'.blog-client-cn05.onrender.com',
         secure:true,
         sameSite:'none',
          httpOnly:true
