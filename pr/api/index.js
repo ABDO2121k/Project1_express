@@ -3,9 +3,11 @@ import postRoutes from './routes/posts.js'
 import userRoutes from './routes/users.js'
 import authRoutes from './routes/auth.js'
 import cookieParser from 'cookie-parser'
+import cors from 'cors'
 
 const app=express()
 app.use(express.json())
+app.use(cors({origin:"https://blog-client-cn05.onrender.com",credentials:true}))
 app.use(cookieParser("hhhhabdo"));  // ad cookie parser hia li kat5lina njibo l cookie mn session
 
 
