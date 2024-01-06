@@ -52,8 +52,8 @@ export const login=(req,res)=>{
        //hadi bax na5do le info w nsftohom m3a l cookie mn 4ir password li mkripti
  
        const {password,...other}=data[0]
- 
-       res.cookie("access_token",token,{
+     console.log(token)
+     return  res.cookie("access_token",token,{
         // domaine:'.blog-client-cn05.onrender.com',
         secure:true,
         sameSite:'none',
