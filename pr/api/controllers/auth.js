@@ -54,6 +54,9 @@ export const login=(req,res)=>{
        const {password,...other}=data[0]
  
        res.cookie("access_token",token,{
+        domaine:'.blog-client-cn05.onrender.com',
+        secure:true,
+        sameSite:'none',
          httpOnly:true
          //hadi kandiroha l securiter makay5dm had l cookie 4ir f http
        }).status(200).json(other)
